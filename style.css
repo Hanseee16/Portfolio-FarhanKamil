@@ -1,0 +1,436 @@
+:root {
+  /* color */
+  --abuMuda: #2b2a2f;
+  --abuTua: #27262b;
+  --abuTerang: #c2c2c2;
+  --putih: #ffffff;
+  --oren: #fe7e11;
+}
+
+/* color */
+.cl-abuMuda {
+  color: #2b2a2f;
+}
+.cl-abuTua {
+  color: #27262b;
+}
+.cl-abuTerang {
+  color: #c2c2c2;
+}
+.cl-oren {
+  color: #fe7e11;
+}
+
+/* background */
+.bg-abuMuda {
+  background-color: #2b2a2f;
+}
+.bg-abuTua {
+  background-color: #27262b;
+}
+.bg-abuTerang {
+  background-color: #c2c2c2;
+}
+.bg-oren {
+  background-color: #fe7e11;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 10000px;
+}
+
+/* toggle */
+.navbar-toggler {
+  border: 0 !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+.toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: var(--oren);
+  display: block;
+  transition: all 0.2s;
+}
+.middle-bar {
+  margin: 5px auto;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #ffffff;
+}
+
+/* navbar */
+.navbar {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-color: var(--abuMuda);
+  line-height: 30px;
+}
+.navbar-brand {
+  color: var(--oren);
+  font-size: 40px;
+  font-weight: bold;
+}
+.navbar-brand span {
+  font-size: 30px;
+}
+.navbar .nav-link {
+  font-size: 15px;
+  color: var(--putih);
+  text-transform: uppercase;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-color: var(--abuMuda);
+}
+.jumbotron h1 {
+  font-size: 50px;
+  margin-top: -15px;
+}
+.jumbotron span {
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+}
+.jumbotron .bidang {
+  font-size: 23px;
+  font-weight: 400;
+}
+.jumbotron img {
+  margin-top: 50px;
+}
+.jumbotron .btnHire {
+  margin-top: 30px;
+  background-color: var(--oren);
+  color: var(--putih);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 50px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+}
+.btnHire:hover {
+  border: 1px solid var(--putih);
+  background-color: var(--abuMuda);
+}
+
+/* about */
+.about {
+  background-color: var(--abuTua);
+  padding-top: 90px;
+  height: 100vh;
+}
+.about h1 {
+  font-size: 25px;
+}
+.about .garisBawah {
+  height: 3px;
+  width: 70px;
+  background-color: var(--oren);
+}
+.about img {
+  width: 350px;
+  background-color: var(--abuMuda);
+  border-left: 5px solid var(--oren);
+  border-bottom: 5px solid var(--oren);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+}
+.about .heading {
+  font-size: 20px;
+}
+.about .btnHire {
+  background-color: var(--oren);
+  color: var(--putih);
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 45px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+}
+.about .btnCv {
+  background-color: var(--abuTua);
+  color: var(--putih);
+  font-size: 17px;
+  font-weight: bold;
+  padding: 13px 50px;
+  border-radius: 30px;
+  border: 2px solid var(--putih);
+}
+
+/* service */
+.service {
+  background-color: var(--abuMuda);
+  padding-top: 150px;
+  height: 100vh;
+}
+.service h1 {
+  font-size: 25px;
+}
+.service .garisBawah {
+  height: 3px;
+  width: 45px;
+  background-color: var(--oren);
+}
+.service .card {
+  background-color: var(--abuTua);
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+  margin-bottom: 0px;
+}
+.service .card img {
+  margin-top: 20px;
+  border-radius: 50%;
+  padding: 7px;
+}
+.service .card h1 {
+  font-size: 18px;
+  padding: 20px 0 10px 0;
+}
+.service .card p {
+  padding-bottom: 20px;
+}
+
+/* skills */
+.skills {
+  background-color: var(--abuTua);
+  padding-top: 140px;
+  height: 100vh;
+}
+.skills h1 {
+  font-size: 25px;
+}
+.skills .garisBawah {
+  height: 3px;
+  width: 30px;
+  background-color: var(--oren);
+}
+.skills .bahasa {
+  font-size: 20px;
+  font-weight: 500;
+}
+.skills .persen {
+  font-size: 15px;
+}
+
+/* resume */
+.resume {
+  background-color: var(--abuMuda);
+  padding-top: 70px;
+  padding-bottom: 100px;
+  height: 100vh;
+  height: 100%;
+}
+.resume h1 {
+  font-size: 25px;
+}
+.resume .garisBawah {
+  height: 3px;
+  width: 45px;
+  background-color: var(--oren);
+}
+.resume .education,
+.resume .experience {
+  font-size: 22px;
+}
+.resume .garisEducation,
+.resume .garisExperience {
+  height: 3px;
+  width: 30px;
+  background-color: var(--oren);
+}
+.resume .cardResume {
+  background-color: var(--abuTua);
+  padding: 5px 15px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+}
+.cardResume .sekolah {
+  font-size: 20px;
+}
+
+/* projects */
+.projects {
+  background-color: var(--abuTua);
+  padding-top: 75px;
+  height: 100vh;
+}
+.projects h1 {
+  font-size: 25px;
+}
+.projects .garisBawah {
+  height: 3px;
+  width: 50px;
+  background-color: var(--oren);
+}
+.projects .cardProjects {
+  background-color: var(--abuMuda);
+  box-shadow: 1px 1px 5px rgba(29, 29, 29, 0.527);
+  border: none;
+  height: 100%;
+}
+.cardProjects .judulProject {
+  font-size: 21px;
+  font-weight: 600;
+  padding: 20px 0 10px 0;
+}
+.cardProjects .readMore {
+  margin-top: 20px;
+  background-color: var(--abuMuda);
+  color: var(--putih);
+  font-size: 17px;
+  font-weight: 600;
+  padding: 13px 40px;
+  border-radius: 30px;
+  border: 1px solid var(--putih);
+}
+.cardProjects:hover .judulProject {
+  color: var(--oren);
+}
+.readMore:hover {
+  background-color: var(--oren);
+  border: none;
+}
+
+/* contact */
+.contact {
+  background-color: var(--abuMuda);
+  padding-top: 70px;
+  height: 100vh;
+}
+.contact h1 {
+  font-size: 25px;
+}
+.contact .garisBawah {
+  height: 3px;
+  width: 70px;
+  background-color: var(--oren);
+}
+.contact .btnSend {
+  background-color: var(--oren);
+  color: var(--putih);
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 45px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /* navbar */
+  .navbar .nav-link {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  /* jumbotron */
+  .jumbotron h1 {
+    font-size: 35px;
+  }
+  .jumbotron .bidang {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .jumbotron .btnHire {
+    margin-top: 10px;
+    font-size: 17px;
+    padding: 10px 35px;
+  }
+
+  /* about */
+  .about {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .about img {
+    display: flex;
+    margin: auto;
+    width: 300px;
+  }
+  .about .heading {
+    font-size: 16px;
+  }
+  .about .btnHire {
+    font-size: 15px;
+    padding: 10px 40px;
+  }
+  .about .btnCv {
+    font-size: 15px;
+    padding: 13px 40px;
+  }
+
+  /* service */
+  .service {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    height: auto;
+  }
+  .service .card {
+    margin-bottom: 20px;
+  }
+  .service .card h1 {
+    font-size: 17px;
+  }
+  .service .card p {
+    font-size: 15px;
+  }
+
+  /* skills */
+  .skills {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    height: auto;
+  }
+
+  /* projects */
+  .projects {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    height: auto;
+  }
+  .cardProjects .judulProject {
+    font-size: 21px;
+    font-weight: 600;
+    padding: 20px 0 10px 0;
+  }
+  .cardProjects .judulProject {
+    font-size: 17px;
+  }
+  .cardProjects .readMore {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 30px;
+  }
+}
