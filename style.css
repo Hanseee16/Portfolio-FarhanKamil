@@ -39,10 +39,6 @@
   box-sizing: border-box;
 }
 
-body {
-  min-height: 10000px;
-}
-
 /* toggle */
 .navbar-toggler {
   border: 0 !important;
@@ -117,10 +113,10 @@ body {
 .jumbotron h1 {
   font-size: 50px;
   margin-top: -15px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
 }
 .jumbotron span {
   letter-spacing: 1px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
 }
 .jumbotron .bidang {
   font-size: 23px;
@@ -209,10 +205,30 @@ body {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
   margin-bottom: 0px;
 }
-.service .card img {
-  margin-top: 20px;
+.service .card .iconTiga {
+  font-size: 35px;
+  background-color: var(--putih);
+  color: var(--oren);
   border-radius: 50%;
-  padding: 7px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 5px;
+}
+.service .card .iconDua {
+  font-size: 35px;
+  background-color: var(--oren);
+  color: var(--putih);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 .service .card h1 {
   font-size: 18px;
@@ -247,7 +263,6 @@ body {
 /* resume */
 .resume {
   background-color: var(--abuMuda);
-  padding-top: 70px;
   padding-bottom: 100px;
   height: 100vh;
   height: 100%;
@@ -325,7 +340,7 @@ body {
 /* contact */
 .contact {
   background-color: var(--abuMuda);
-  padding-top: 70px;
+  padding-top: 130px;
   height: 100vh;
 }
 .contact h1 {
@@ -336,15 +351,46 @@ body {
   width: 70px;
   background-color: var(--oren);
 }
+.contact p {
+  font-size: 17px;
+}
+.contact i {
+  font-size: 25px;
+  border-radius: 50%;
+  border: 3px solid var(--oren);
+  padding: 10px;
+}
+.contact .name,
+.contact .email,
+.contact .messange {
+  background-color: var(--abuMuda);
+  border: 1px solid var(--oren);
+  padding: 10px 10px;
+  color: var(--putih);
+}
+.name::placeholder,
+.email::placeholder,
+.messange::placeholder {
+  color: var(--abuTerang);
+}
 .contact .btnSend {
+  margin-top: 20px;
   background-color: var(--oren);
   color: var(--putih);
   font-size: 17px;
-  font-weight: bold;
-  padding: 5px 45px;
+  font-weight: 500;
+  padding: 12px 40px;
   border-radius: 30px;
   border: none;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
+}
+
+/* footer */
+.footer .right i {
+  font-size: 30px;
+  color: var(--putih);
+  list-style: none;
+  text-decoration: none;
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -432,5 +478,24 @@ body {
     font-size: 15px;
     font-weight: 600;
     padding: 10px 30px;
+  }
+  /* contact */
+  .contact {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    height: auto;
+  }
+  .contact p {
+    font-size: 15px;
+  }
+  .contact i {
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--oren);
+  }
+  .contact .btnSend {
+    font-size: 15px;
+    padding: 13px 37px;
+    border-radius: 30px;
   }
 }
