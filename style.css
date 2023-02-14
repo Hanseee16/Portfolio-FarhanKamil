@@ -37,7 +37,6 @@
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 /* toggle */
@@ -352,14 +351,21 @@
   width: 70px;
   background-color: var(--oren);
 }
+.contact a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.contact a i {
+  font-size: 23px;
+  border-radius: 50%;
+  border: 2px solid var(--oren);
+  padding: 5px 10px;
+  text-decoration: none;
+  list-style: no;
+}
 .contact p {
   font-size: 17px;
-}
-.contact i {
-  font-size: 25px;
-  border-radius: 50%;
-  border: 3px solid var(--oren);
-  padding: 10px;
 }
 .contact .name,
 .contact .email,
@@ -384,14 +390,6 @@
   border-radius: 30px;
   border: none;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
-}
-
-/* footer */
-.footer .right i {
-  font-size: 30px;
-  color: var(--putih);
-  list-style: none;
-  text-decoration: none;
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -455,6 +453,13 @@
 
   /* skills */
   .skills {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    height: auto;
+  }
+
+  /* resume */
+  .resume {
     padding-top: 80px;
     padding-bottom: 100px;
     height: auto;
