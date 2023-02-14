@@ -1,0 +1,28 @@
+:root {
+  /* color */
+  --abuMuda: #2b2a2f;
+  --abuTua: #27262b;
+  --abuTerang: #c2c2c2;
+  --putih: #ffffff;
+  --oren: #fe7e11;
+}
+
+/* skills */
+
+.skills {
+  background-color: var(--abuTua);
+  padding-top: 20px;
+  height: auto;
+}
+.skills h1 {
+  font-size: 25px;
+}
+.skills .garisBawah {
+  height: 3px;
+  width: 30px;
+  background-color: var(--oren);
+}
+
+.skills .cardSkills {
+  border: 1px solid red;
+}

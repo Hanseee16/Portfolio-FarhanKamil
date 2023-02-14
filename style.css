@@ -97,6 +97,9 @@
   font-size: 40px;
   font-weight: bold;
 }
+.navbar-brand:hover {
+  color: var(--oren);
+}
 .navbar-brand span {
   font-size: 30px;
 }
@@ -109,6 +112,7 @@
 /* jumbotron */
 .jumbotron {
   background-color: var(--abuMuda);
+  overflow: hidden;
 }
 .jumbotron h1 {
   font-size: 50px;
@@ -160,6 +164,7 @@
   background-color: var(--abuMuda);
   border-left: 5px solid var(--oren);
   border-bottom: 5px solid var(--oren);
+  border-radius: 0 10px 0 10px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
 }
 .about .heading {
@@ -202,6 +207,7 @@
 .service .card {
   background-color: var(--abuTua);
   border: none;
+  border-radius: 10px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
   margin-bottom: 0px;
 }
@@ -289,6 +295,7 @@
   background-color: var(--abuTua);
   padding: 5px 15px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+  border-radius: 10px;
 }
 .cardResume .sekolah {
   font-size: 20px;
@@ -297,7 +304,7 @@
 /* projects */
 .projects {
   background-color: var(--abuTua);
-  padding-top: 75px;
+  padding-top: 90px;
   height: 100vh;
 }
 .projects h1 {
@@ -312,20 +319,21 @@
   background-color: var(--abuMuda);
   box-shadow: 1px 1px 5px rgba(29, 29, 29, 0.527);
   border: none;
+  border-radius: 10px;
   height: 100%;
 }
 .cardProjects .judulProject {
   font-size: 21px;
   font-weight: 600;
-  padding: 20px 0 10px 0;
+  padding: 20px 0 5px 0;
 }
 .cardProjects .readMore {
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: var(--abuMuda);
   color: var(--putih);
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
-  padding: 13px 40px;
+  padding: 10px 35px;
   border-radius: 30px;
   border: 1px solid var(--putih);
 }
@@ -365,7 +373,7 @@
   list-style: no;
 }
 .contact p {
-  font-size: 17px;
+  font-size: 19px;
 }
 .contact .name,
 .contact .email,
@@ -476,9 +484,7 @@
     font-weight: 600;
     padding: 20px 0 10px 0;
   }
-  .cardProjects .judulProject {
-    font-size: 17px;
-  }
+
   .cardProjects .readMore {
     margin-top: 20px;
     font-size: 15px;
@@ -492,7 +498,7 @@
     height: auto;
   }
   .contact p {
-    font-size: 15px;
+    font-size: 18px;
   }
   .contact i {
     font-size: 20px;
