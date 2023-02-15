@@ -162,8 +162,8 @@
 .about img {
   width: 350px;
   background-color: var(--abuMuda);
-  border-left: 5px solid var(--oren);
-  border-bottom: 5px solid var(--oren);
+  border-left: 3px solid var(--oren);
+  border-bottom: 3px solid var(--oren);
   border-radius: 0 10px 0 10px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
 }

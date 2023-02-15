@@ -11,8 +11,7 @@
 
 .skills {
   background-color: var(--abuTua);
-  padding-top: 20px;
-  height: auto;
+  height: 200vh;
 }
 .skills h1 {
   font-size: 25px;
@@ -24,5 +23,20 @@
 }
 
 .skills .cardSkills {
-  border: 1px solid red;
+  background-color: var(--abuMuda);
+  border-radius: 10px;
+  border: none;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 3px 3px 5px #1f1f1f9c;
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .skills {
+    height: auto;
+  }
+  .skills .cardSkills {
+    padding: 50px;
+  }
 }
