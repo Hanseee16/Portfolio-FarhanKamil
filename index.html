@@ -42,10 +42,10 @@
       <div class="container">
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-lg-5 col-md-6 col-12">
-            <p class="text-light fs-3 fw-semibold pt-lg-0 pt-sm-0 pt-4">Hello,</p>
-            <h1 class="text-light fw-bold">I am <span class="cl-oren"></span></h1>
-            <p class="cl-abuTerang bidang">UI/UX Designer | Web Development</p>
-            <button class="btnHire">Hire Me</button>
+            <p class="text-light fs-3 fw-semibold pt-lg-0 pt-sm-0 pt-4 heading">Hello,</p>
+            <h1 class="text-light fw-bold subheading">I am <span class="cl-oren"></span></h1>
+            <p class="cl-abuTerang bidang"></p>
+            <button class="btnHire" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1000" data-aos-duration="1200" data-aos-once="true">Hire Me</button>
           </div>
           <div class="col-lg-6 col-md-6 col-12">
             <img src="img/farhanKamil 1.png" alt="" class="img-fluid pt-lg-0 pt-sm-0 pt-3" />
@@ -75,7 +75,7 @@
                 <p>Nationality:</p>
                 <p>Address:</p>
               </div>
-              <div class="col-lg-6 col-md-6 col-5">
+              <div class="col-lg-6 col-md-6 col-6">
                 <p>Farhan Kamil</p>
                 <p>Kamilfarhan225@gmail.com</p>
                 <p>+6281 611 203 62</p>
@@ -340,9 +340,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to(".jumbotron span", {
-        duration: 3,
-        text: "Farhan Kamil",
+      gsap.to(".jumbotron  span", {
+        duration: 1,
+        text: "Farhan Kamil ",
+      });
+      gsap.to(".jumbotron .bidang", {
+        duration: 1,
+        delay: 1,
+        text: "UI/UX Designer | Web Development",
       });
     </script>
     <!-- aos -->
